@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammed Musthafa K | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Animated Header */
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(-45deg,#2563eb,#7c3aed,#06b6d4,#3b82f6);
+    background-size:400% 400%;
+    animation:gradient 10s ease infinite;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid rgba(255,255,255,0.8);
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    margin-bottom:20px;
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Sections */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:25px;
+    transition:0.4s;
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeUp 1s forwards;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+/* Skills */
+
+.skill{
+    margin:20px 0;
+}
+
+.bar{
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    height:12px;
+    background:linear-gradient(to right,#06b6d4,#3b82f6);
+    animation:load 2s;
+}
+
+@keyframes load{
+    from{width:0;}
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="C:\Users\m4mus\OneDrive\Desktop\avatar.png" alt="Mohammed Musthafa K" class="profile">
+
+<h1>Mohammed Musthafa K</h1>
+<p>BCA Student • Python Programmer • AI Enthusiast</p>
+
+<a href="#about" class="btn">Explore Portfolio</a>
+
+</header>
+
+<div class="container">
+
+<div class="card" id="about">
+<h2>About Me</h2>
+
+<p>
+I am currently pursuing a Bachelor of Computer Applications (BCA)
+at Yuvakshetra Institute of Management Studies. I am passionate
+about programming, AI technologies and software development.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Education</h2>
+
+<p>
+Bachelor of Computer Applications (BCA)<br>
+Yuvakshetra Institute of Management Studies
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Skills</h2>
+
+<div class="skill">
+Python
+<div class="bar">
+<div class="progress" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+Microsoft Office
+<div class="bar">
+<div class="progress" style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+Problem Solving
+<div class="bar">
+<div class="progress" style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+Teamwork
+<div class="bar">
+<div class="progress" style="width:88%"></div>
+</div>
+</div>
+
+<div class="card">
+
+<h2>Interests</h2>
+
+<ul>
+<li>Football</li>
+<li>Gaming</li>
+<li>Learning Programming</li>
+<li>Exploring AI</li>
+<li>Technology Trends</li>
+<li>Team Activities</li>
+</ul>
+
+</div>
+<div class="card">
+
+<h2>Career Goal</h2>
+
+<p>
+To build a successful career in the IT industry by continuously
+improving my technical skills and contributing to innovative
+software and AI solutions.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Contact</h2>
+
+<p>Name: Mohammed Musthafa K</p>
+<p>Location: Cherpulassery, Palakkad, Kerala</p>
+<p>Email: m4musthafa006@gmail.com</p>
+<p>GitHub: m4musthafa006-art</p>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Mohammed Musthafa K | Portfolio
+</footer>
+
+</body>
+</html>
